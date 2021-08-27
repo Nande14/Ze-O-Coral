@@ -5,20 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
-    public float JumpForce;
-   
-   
 
-
-    private Rigidbody2D rig;
+    private Rigidbody2D rb;
     private Animator anim;
 
-   
 
-    
     void Start()
     {
-        rig = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -32,7 +26,8 @@ public class Player : MonoBehaviour
     
     void Move()
     {
-      Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
       transform.position += movement * Time.deltaTime * speed;
         if(Input.GetAxis("Horizontal") > 0f)
         {
@@ -50,6 +45,16 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("walk", false);
         }
+
+        if(Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("rede", true);
+        }
+        if (!Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("rede", false);
+        }
+
 
     }
     
