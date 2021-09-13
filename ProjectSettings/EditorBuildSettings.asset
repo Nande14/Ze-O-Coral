@@ -20,4 +20,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TelaV.unity
     guid: 26f8f8cbd650e4941a24ec6c77ecf12e
+  - enabled: 1
+    path: Assets/Scenes/H1.unity
+    guid: 2a52ef0e13e66574db89bede3eaeb5d7
+  - enabled: 1
+    path: Assets/Scenes/H2.unity
+    guid: 1dd3eaa2351ab074d90ccd1fcdb47576
+  - enabled: 1
+    path: Assets/Scenes/H3.unity
+    guid: 5e34d5744f2a2e44b90601c940c903e7
+  - enabled: 1
+    path: Assets/Scenes/H4.unity
+    guid: a30af55b307f6bc46bc4211d0a6f128e
+  - enabled: 1
+    path: Assets/Scenes/Nave.unity
+    guid: 53e9ad070f77b4a4597dbd102b5edea5
+  - enabled: 1
+    path: Assets/Scenes/Erick.unity
+    guid: d219b6acea20e3648864748c0b07371b
   m_configObjects: {}
