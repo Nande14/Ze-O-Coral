@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
+    public bool redezinha = false;
 
 
     void Start()
@@ -46,12 +47,14 @@ public class Player : MonoBehaviour
             anim.SetBool("walk", false);
         }
 
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space ))
         {
+            redezinha = true;
             anim.SetBool("rede", true);
         }
         if (!Input.GetKey(KeyCode.Space))
         {
+            redezinha = false;
             anim.SetBool("rede", false);
         }
 
