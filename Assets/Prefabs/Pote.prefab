@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Score: 5
-  nomeDaCena: Menu
+  nomeDaCena: TelaD
   nomeDaOutraCena: Creditos
 --- !u!114 &7217855991871085599
 MonoBehaviour:
