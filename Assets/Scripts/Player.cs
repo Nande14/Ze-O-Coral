@@ -5,14 +5,20 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
-
+    private float saveSpeed;
+    public Transform reference;
+    private Vector3 vetorReferencia;
+    Vector3 movement;
     private Rigidbody2D rb;
     private Animator anim;
+    public LayerMask layer;
     public bool redezinha = false;
+    public float radius;
 
 
     void Start()
     {
+        saveSpeed = speed;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
@@ -21,14 +27,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
-        
+        vetorReferencia = new Vector3(reference.position.x + 13f, 0, 0);
     }
 
     
     void Move()
     {
-
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+      movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
       transform.position += movement * Time.deltaTime * speed;
         if(Input.GetAxis("Horizontal") > 0f)
         {
@@ -61,9 +66,6 @@ public class Player : MonoBehaviour
 
     }
     
-
-
-
 
 }
 
