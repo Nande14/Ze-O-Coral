@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 948ed7d325183564ea1da0fd3dd7422b
+  - enabled: 1
+    path: Assets/Scenes/TelaD.unity
+    guid: 4e9bc88d6b9a7d842aed5d25dd1a8435
+  - enabled: 1
+    path: Assets/Scenes/TelaV.unity
+    guid: 26f8f8cbd650e4941a24ec6c77ecf12e
   m_configObjects: {}
